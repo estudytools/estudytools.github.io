@@ -104,7 +104,7 @@ async function loadFooter() {
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p>&copy; 2024 Student Tools Suite. All rights reserved.</p>
+                    <p>&copy; 2026 Student Tools Suite. All rights reserved.</p>
                     <p>Made with ❤️ for students</p>
                 </div>
             </div>
