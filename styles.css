@@ -7,12 +7,13 @@
     --primary-purple: #9900ff;
     --primary-orange: #ff6600;
     
-    --dark-bg: #1a1a1a;
-    --light-bg: #f5f5f5;
-    --border-color: #333333;
-    --text-dark: #0a0a0a;
+    --cream-bg: #f9f7f3;
+    --light-bg: #ffffff;
+    --border-color: #e0dbd5;
+    --text-dark: #1a1a1a;
     --text-light: #ffffff;
-    --text-muted: #666666;
+    --text-muted: #5a5a5a;
+    --border-radius: 12px;
     
     --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --border-width: 2px;
@@ -31,7 +32,7 @@ html {
 
 body {
     font-family: 'Courier New', monospace;
-    background-color: var(--dark-bg);
+    background-color: var(--cream-bg);
     color: var(--text-dark);
     line-height: 1.6;
     letter-spacing: 0.5px;
@@ -60,6 +61,7 @@ a {
     display: inline-block;
     padding: 0.75rem 1.5rem;
     border: var(--border-width) solid;
+    border-radius: var(--border-radius);
     font-family: 'Courier New', monospace;
     font-size: 1rem;
     font-weight: 700;
@@ -105,6 +107,7 @@ a {
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .header-content {
@@ -182,6 +185,7 @@ a {
     z-index: 200;
     transition: var(--transition);
     overflow-y: auto;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar.active {
@@ -293,6 +297,7 @@ a {
     width: 40px;
     height: 40px;
     border: 2px solid var(--text-light);
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -354,6 +359,7 @@ a {
 .slider-wrapper {
     overflow: hidden;
     border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
 }
 
 .slider-track {
@@ -404,6 +410,7 @@ a {
     background-color: var(--text-dark);
     color: var(--text-light);
     border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
     width: 50px;
     height: 50px;
     font-size: 1.5rem;
@@ -457,9 +464,11 @@ a {
 .feature-card {
     padding: 2rem;
     border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
     background-color: var(--light-bg);
     transition: var(--transition);
     text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .feature-card:hover {
@@ -498,10 +507,12 @@ a {
 .tool-preview {
     padding: 2rem;
     border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
     background-color: var(--light-bg);
     text-align: center;
     transition: var(--transition);
     cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .tool-preview:hover {
@@ -517,7 +528,7 @@ a {
     align-items: center;
     justify-content: center;
     font-size: 2.5rem;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
 }
 
 .tool-preview h3 {
@@ -546,10 +557,12 @@ a {
 .tool-card {
     padding: 2rem;
     border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
     background-color: var(--light-bg);
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .tool-card::before {
@@ -581,7 +594,7 @@ a {
     align-items: center;
     justify-content: center;
     font-size: 2.5rem;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
     background: linear-gradient(135deg, var(--primary-blue), var(--primary-purple));
 }
 
@@ -602,8 +615,10 @@ a {
     background-color: var(--light-bg);
     border-top: var(--border-width) solid var(--border-color);
     border-bottom: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
     text-align: center;
     margin: 3rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .cta-section h2 {
@@ -632,8 +647,10 @@ a {
 .testimonial-card {
     padding: 2rem;
     border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
     background-color: var(--light-bg);
     transition: var(--transition);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .testimonial-card:hover {
@@ -674,8 +691,10 @@ a {
 .blog-card {
     padding: 2rem;
     border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
     background-color: var(--light-bg);
     transition: var(--transition);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .blog-card:hover {
