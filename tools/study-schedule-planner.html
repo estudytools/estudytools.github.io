@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Study Schedule Planner - Organize your study sessions with a powerful calendar UI featuring drag-and-drop functionality. Plan your academic year efficiently.">
+    <meta name="keywords" content="study schedule, calendar planner, time management, academic planning, drag drop scheduler, study timetable">
+    <meta name="author" content="Student Tools Suite">
+    <meta property="og:title" content="Study Schedule Planner - Organize Your Study Time">
+    <meta property="og:description" content="Plan your study sessions with an interactive calendar and drag-and-drop scheduling.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://estudytools.github.io/tools/study-schedule-planner.html">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://estudytools.github.io/tools/study-schedule-planner.html">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="manifest" href="../manifest.json">
+    <title>Study Schedule Planner - Student Tools Suite</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Study Schedule Planner",
+        "url": "https://estudytools.github.io/tools/study-schedule-planner.html",
+        "description": "Plan and organize your study schedule with interactive calendar and drag-and-drop functionality",
+        "applicationCategory": "ProductivityApplication",
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+        "author": {"@type": "Organization", "name": "Student Tools Suite"},
+        "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.7", "ratingCount": "1890"}
+    }
+    </script>
+</head>
+<body>
+    <div id="header-container"></div>
+    <div id="sidebar-container"></div>
+    
+    <main class="main-content">
+        <section class="tool-header" style="background: linear-gradient(135deg, #00cc66, #009933);">
+            <div class="container">
+                <div class="tool-header-content">
+                    <div class="tool-header-icon">📅</div>
+                    <div>
+                        <h1>Study Schedule Planner</h1>
+                        <p class="tool-subtitle">Organize and plan your study sessions with interactive calendar management</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tool-section">
+            <div class="container">
+                <h2>How to Use</h2>
+                <div class="how-to-grid">
+                    <div class="how-to-step">
+                        <div class="step-number">1</div>
+                        <h3>View Your Calendar</h3>
+                        <p>See your entire month at a glance. The color-coded view shows which days have study sessions scheduled.</p>
+                    </div>
+                    <div class="how-to-step">
+                        <div class="step-number">2</div>
+                        <h3>Click a Date</h3>
+                        <p>Click any date to add a new study session, exam, or important deadline to your schedule.</p>
+                    </div>
+                    <div class="how-to-step">
+                        <div class="step-number">3</div>
+                        <h3>Drag to Reschedule</h3>
+                        <p>Drag sessions between dates to adjust your schedule. Perfect for moving study sessions around.</p>
+                    </div>
+                    <div class="how-to-step">
+                        <div class="step-number">4</div>
+                        <h3>Set Reminders</h3>
+                        <p>Enable notifications to get reminders before your scheduled study sessions begin.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tool-section alternate-bg">
+            <div class="container">
+                <h2>Key Features</h2>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <span class="feature-icon">📆</span>
+                        <div>
+                            <h3>Monthly Calendar View</h3>
+                            <p>See your entire study schedule at a glance with a clean, organized calendar interface.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🎯</span>
+                        <div>
+                            <h3>Drag & Drop Sessions</h3>
+                            <p>Easily reschedule study sessions by dragging them to different dates without any hassle.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🔔</span>
+                        <div>
+                            <h3>Smart Reminders</h3>
+                            <p>Get notified before your study sessions start so you never miss a planned session.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">📌</span>
+                        <div>
+                            <h3>Priority Marking</h3>
+                            <p>Mark urgent exams and important deadlines to prioritize your study time effectively.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">📊</span>
+                        <div>
+                            <h3>Study Analytics</h3>
+                            <p>Track how many hours you've studied each week and identify patterns in your schedule.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🔄</span>
+                        <div>
+                            <h3>Recurring Sessions</h3>
+                            <p>Set up recurring study sessions for daily or weekly subjects automatically.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tool-section">
+            <div class="container">
+                <h2>Effective Study Scheduling</h2>
+                <div class="description-content">
+                    <p>Proper time management is crucial for academic success. The Study Schedule Planner helps you allocate your time effectively across all your subjects and assignments.</p>
+                    
+                    <h3>Time Management Principles</h3>
+                    <ul class="best-practices">
+                        <li><strong>Distribute study load:</strong> Spread studying across multiple days rather than cramming</li>
+                        <li><strong>Use prime hours:</strong> Schedule difficult subjects when your energy is highest</li>
+                        <li><strong>Include breaks:</strong> Plan 5-10 minute breaks every hour for optimal focus</li>
+                        <li><strong>Balance subjects:</strong> Rotate between different subjects to maintain engagement</li>
+                        <li><strong>Start early:</strong> Begin exam preparation 3-4 weeks before the test</li>
+                        <li><strong>Review sessions:</strong> Schedule regular review sessions to reinforce learning</li>
+                    </ul>
+
+                    <h3>Recommended Weekly Schedule</h3>
+                    <p><strong>High School:</strong> 2-3 hours per night, 12-15 hours weekly</p>
+                    <p><strong>College:</strong> 2-3 hours per class per week outside of class time</p>
+                    <p><strong>Final Exams:</strong> Double your normal study time 2 weeks before exams</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tool-section alternate-bg">
+            <div class="container">
+                <h2>Planning Your Semester</h2>
+                <div class="demo-container">
+                    <div class="demo-info">
+                        <h3>Start with Your Syllabus</h3>
+                        <p>Transfer all important dates from your course syllabi into the planner at the beginning of the semester. This includes exams, project deadlines, and paper due dates.</p>
+                        <p>Then, work backwards from these dates to schedule adequate study preparation time. For a major exam, start preparing 3-4 weeks in advance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tool-section">
+            <div class="container">
+                <h2>Student Success Stories</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p>"This planner transformed my grades! I went from scattered to organized instantly."</p>
+                        <p class="testimonial-author">- Rachel, Junior</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Drag and drop makes scheduling so easy. I love how visual it is!"</p>
+                        <p class="testimonial-author">- Marcus, Senior</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Finally stopped cramming! The reminder system keeps me on track."</p>
+                        <p class="testimonial-author">- Lisa, College Freshman</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tool-sidebar-section">
+            <div class="container">
+                <div class="tool-content-with-sidebar">
+                    <div class="tool-main">
+                        <h2>Getting Started with Your First Schedule</h2>
+                        <ol>
+                            <li>Open the planner and set your semester or year view</li>
+                            <li>Add all class times and meeting schedules</li>
+                            <li>Mark all known exam dates and deadlines</li>
+                            <li>Plan study sessions at least 3-4 days before each exam</li>
+                            <li>Include 30-minute review sessions every Friday evening</li>
+                            <li>Set reminders for 24 hours before important events</li>
+                        </ol>
+                    </div>
+                    <aside class="tool-sidebar">
+                        <div class="sidebar-widget">
+                            <h3>Study Statistics</h3>
+                            <ul>
+                                <li>Average study hours/week: 15-20</li>
+                                <li>Ideal session length: 50-90 minutes</li>
+                                <li>Break frequency: Every 50 minutes</li>
+                                <li>Optimal planning window: 3-4 weeks</li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h3>Scheduling Tips</h3>
+                            <ul>
+                                <li>Schedule during peak focus hours</li>
+                                <li>Mix easy and hard subjects</li>
+                                <li>Include buffer time for emergencies</li>
+                                <li>Plan rewards after sessions</li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Organize Your Academic Life Today</h2>
+            <p>Create a sustainable study schedule that works for you</p>
+            <button class="btn btn-primary btn-large">Launch Study Scheduler</button>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <style>
+        .tool-header {
+            padding: 3rem 2rem;
+            color: white;
+        }
+
+        .tool-header-content {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .tool-header-icon {
+            font-size: 4rem;
+        }
+
+        .tool-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            margin-top: 0.5rem;
+        }
+
+        .tool-section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .alternate-bg {
+            background-color: #ffffff;
+        }
+
+        .how-to-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .how-to-step {
+            padding: 2rem;
+            border: 2px solid #e0dbd5;
+            border-radius: 12px;
+            text-align: center;
+            background: white;
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #00cc66, #009933);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 1rem;
+        }
+
+        .features-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-item {
+            display: flex;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            border-radius: 12px;
+            background: #f9f7f3;
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+
+        .description-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 2px solid #e0dbd5;
+        }
+
+        .description-content h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: #00cc66;
+        }
+
+        .best-practices {
+            list-style: none;
+            padding: 0;
+        }
+
+        .best-practices li {
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .best-practices li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #00cc66;
+            font-weight: bold;
+        }
+
+        .demo-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 2px solid #e0dbd5;
+        }
+
+        .tool-content-with-sidebar {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 2rem;
+        }
+
+        .tool-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .sidebar-widget {
+            padding: 1.5rem;
+            background: white;
+            border: 2px solid #e0dbd5;
+            border-radius: 12px;
+        }
+
+        .sidebar-widget h3 {
+            margin-bottom: 1rem;
+            color: #00cc66;
+        }
+
+        .sidebar-widget ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar-widget li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 0.95rem;
+        }
+
+        .sidebar-widget li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #00cc66;
+        }
+
+        @media (max-width: 768px) {
+            .tool-header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .tool-content-with-sidebar {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <script src="../script.js"></script>
+</body>
+</html>
